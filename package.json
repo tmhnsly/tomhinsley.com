@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "/myWebsite/",
+  "homepage": "https://tmhnsly.github.io/myWebsite/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
