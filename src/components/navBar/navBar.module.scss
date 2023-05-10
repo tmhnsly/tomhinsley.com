@@ -1,0 +1,29 @@
+.navBar {
+  // POSITION
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  // LAYOUT
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-xsmall);
+  height: 4rem;
+
+  // STYLE
+  background-color: var(--sageA1);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  box-shadow: 0px -2px 15px var(--sageA6);
+}
+
+.logo {
+  font-weight: var(--font-weight-bold);
+}
+
+.links {
+  display: flex;
+  gap: var(--spacing-xxxsmall);
+  align-items: inherit;
+}

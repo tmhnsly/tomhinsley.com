@@ -1,0 +1,80 @@
+/* FONT IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+/* COLOUR IMPORTS */
+@import "@radix-ui/colors/blackA.css";
+@import "@radix-ui/colors/sage.css";
+@import "@radix-ui/colors/sageDark.css";
+@import "@radix-ui/colors/sageA.css";
+@import "@radix-ui/colors/sageDark.css";
+@import "@radix-ui/colors/sageDarkA.css";
+
+@import "@radix-ui/colors/teal.css";
+@import "@radix-ui/colors/tealDark.css";
+
+@import "@radix-ui/colors/red.css";
+@import "@radix-ui/colors/redDark.css";
+@import "@radix-ui/colors/amber.css";
+@import "@radix-ui/colors/amberDark.css";
+@import "@radix-ui/colors/green.css";
+@import "@radix-ui/colors/greenDark.css";
+@import "@radix-ui/colors/blue.css";
+@import "@radix-ui/colors/blueDark.css";
+
+:root {
+  /* FONT SIZES */
+  --font-size-micro: 0.25rem;
+  --font-size-xsmall: 0.5rem;
+  --font-size-small: 0.75rem;
+  --font-size-regular: 1rem;
+  --font-size-medium: 1.5rem;
+  --font-size-large: 2.5rem;
+  --font-size-xlarge: 4rem;
+  --font-size-jumbo: 6rem;
+
+  /** FONT WEIGHTS */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* SPACING */
+  --spacing-xxsmall: 0.5rem;
+  --spacing-xsmall: 0.625rem;
+  --spacing-small: 0.75rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.25rem;
+  --spacing-xlarge: 1.5rem;
+  --spacing-xxlarge: 2rem;
+  --spacing-xxxlarge: 3rem;
+  --spacing-jumbo: 3.75rem;
+
+  /* STYLING */
+  --border-radius-default: 0.5rem;
+  --border-radius-round: 50%;
+}
+
+body {
+  background-color: var(--sage1);
+  color: var(--sage12);
+
+  /* FONTS */
+  font-family: Rubik, system-ui, sans-serif;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: var(--font-size-large);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+}
+
+h3 {
+  font-size: var(--font-size-regular);
+}
+
+p {
+  font-size: var(--font-size-regular);
+}

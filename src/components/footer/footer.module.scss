@@ -1,0 +1,18 @@
+.footer {
+  // LAYOUT
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-xsmall);
+  height: 4rem;
+
+  // STYLE
+  background-color: var(--sageA2);
+}
+
+.links {
+  margin: unset;
+  display: flex;
+  gap: var(--spacing-xxxsmall);
+  list-style-type: none;
+}
