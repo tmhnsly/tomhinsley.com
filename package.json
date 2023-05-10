@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "tomhinsley.com/",
+  "homepage": "https://tomhinsley.com/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
