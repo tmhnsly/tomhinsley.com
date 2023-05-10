@@ -3,6 +3,7 @@ import { NavBar } from "./components/navBar/NavBar";
 import { Button } from "./components/button/Button";
 import { AlertDialog } from "./components/alertDialog/AlertDialog";
 import { TooltipProvider } from "@radix-ui/react-tooltip";
+import MemojiWave from "../public/assets/images/memoji-wave.webp";
 import "./theme.css";
 
 import styles from "./app.module.scss";
@@ -18,10 +19,7 @@ function App() {
       <NavBar />
       <div className={styles.content}>
         <div className={styles.avatarAnimation}>
-          <img
-            className={styles.avatar}
-            src={"../public/assets/images/memoji-wave.webp"}
-          />
+          <img className={styles.avatar} src={MemojiWave} />
           <div className={styles.gradient}>
             <div className={concat(styles.blob, styles.up)} />
             <div className={concat(styles.blob, styles.down)} />
