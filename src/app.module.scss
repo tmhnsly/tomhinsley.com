@@ -52,6 +52,7 @@
     // STYLE
     border-radius: 50%;
     filter: blur(5rem);
+    transform: translate3d(0, 0, 0);
 
     &.up {
       animation: blobDown 65s infinite linear;
