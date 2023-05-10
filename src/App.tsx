@@ -37,7 +37,7 @@ function App() {
                 other bits sorted. Hi.
               </p>
               <p>
-                Anyway, I hope this is a good amount of text to see how it all
+                Anyways, I hope this is a good amount of text to see how it all
                 works. The more, the better really. Most people use lorem
                 impsum, but it never seems to read like an actual thing.
               </p>
