@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "../../components/button/Button";
 import { AlertDialog } from "../../components/alertDialog/AlertDialog";
 import { Tooltip } from "../../components/tooltip/Tooltip";
+import MemojiWave from "../../../public/assets/images/memoji-wave.webp";
 
 import styles from "./homePage.module.scss";
 import { concat } from "../../helpers/concat";
@@ -14,7 +15,7 @@ function HomePage() {
       <div className={styles.avatarAnimation}>
         <img
           className={styles.avatar}
-          src="../../../public/assets/images/memoji-wave.webp"
+          src={MemojiWave}
           alt={"Man waving memoji"}
         />
         <div className={styles.gradient}>
