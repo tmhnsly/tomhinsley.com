@@ -17,15 +17,27 @@ export const NavBar: React.FC<INavBarProps> = () => {
   return (
     <nav className={styles.navBar}>
       <Tooltip content={"Home"}>
-        <Button theme="transparent" className={styles.logo}>
+        <Button
+          ariaLabel="Open homepage"
+          theme="transparent"
+          className={styles.logo}
+        >
           ⚡️ Playground
         </Button>
       </Tooltip>
       <div className={styles.links}>
-        <Button theme="transparent">About</Button>
-        <Button theme="transparent">Contact</Button>
+        <Button ariaLabel="Open About page" theme="transparent">
+          About
+        </Button>
+        <Button ariaLabel="Open Contact" theme="transparent">
+          Contact
+        </Button>
         <Tooltip content={"Toggle theme"}>
-          <Button theme="transparent" onClick={() => toggleDarkMode(!darkMode)}>
+          <Button
+            ariaLabel="Toggle theme"
+            theme="transparent"
+            onClick={() => toggleDarkMode(!darkMode)}
+          >
             {darkMode ? <SunIcon /> : <MoonIcon />}
           </Button>
         </Tooltip>

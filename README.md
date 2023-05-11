@@ -1,4 +1,4 @@
-# myWebsite
+# tomhinsley.com
 
 ## Setup
 

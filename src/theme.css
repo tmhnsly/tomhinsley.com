@@ -54,6 +54,7 @@
 }
 
 body {
+  /* STYLES */
   background-color: var(--sage1);
   color: var(--sage12);
 

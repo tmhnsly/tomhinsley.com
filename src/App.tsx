@@ -19,7 +19,11 @@ function App() {
       <NavBar />
       <div className={styles.content}>
         <div className={styles.avatarAnimation}>
-          <img className={styles.avatar} src={MemojiWave} />
+          <img
+            className={styles.avatar}
+            src={MemojiWave}
+            alt={"Waving man memoji"}
+          />
           <div className={styles.gradient}>
             <div className={concat(styles.blob, styles.left)} />
             <div className={concat(styles.blob, styles.right)} />

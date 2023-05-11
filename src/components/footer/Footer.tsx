@@ -17,28 +17,32 @@ export const Footer: React.FC<INavBarProps> = () => {
   return (
     <footer className={styles.footer}>
       <Tooltip content={"Back to top"}>
-        <Button onClick={() => scrollToTop()} theme="transparent">
+        <Button
+          ariaLabel="Back to top"
+          onClick={() => scrollToTop()}
+          theme="transparent"
+        >
           <DoubleArrowUpIcon />
         </Button>
       </Tooltip>
       <ul className={styles.links}>
         <li>
           <Tooltip content={"Instagram"}>
-            <Button theme="transparent">
+            <Button ariaLabel="Open Instagram" theme="transparent">
               <InstagramLogoIcon />
             </Button>
           </Tooltip>
         </li>
         <li>
           <Tooltip content={"Github"}>
-            <Button theme="transparent">
+            <Button ariaLabel="Open Github" theme="transparent">
               <GitHubLogoIcon />
             </Button>
           </Tooltip>
         </li>
         <li>
           <Tooltip content={"LinkedIn"}>
-            <Button theme="transparent">
+            <Button ariaLabel="Open LinkedIn" theme="transparent">
               <LinkedInLogoIcon />
             </Button>
           </Tooltip>

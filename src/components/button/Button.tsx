@@ -14,6 +14,7 @@ interface IButtonProps extends React.PropsWithChildren {
   size?: "small" | "medium" | "large";
   onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
   className?: string;
+  ariaLabel?: string;
 }
 
 export const Button: React.FC<IButtonProps> = ({
@@ -23,6 +24,7 @@ export const Button: React.FC<IButtonProps> = ({
   theme,
   size,
   className,
+  ariaLabel,
 }) => {
   return (
     <button
@@ -31,6 +33,7 @@ export const Button: React.FC<IButtonProps> = ({
       data-theme={theme}
       data-mode={mode}
       data-size={size}
+      aria-label={ariaLabel}
     >
       {children}
     </button>
