@@ -26,7 +26,7 @@
 
 .gradient {
   // VARIABLES
-  --gradient-blob-size-large: 60vw;
+  --gradient-blob-size-large: 50vw;
 
   --gradient-color-one: var(--blue8);
   --gradient-color-two: var(--red9);
@@ -47,16 +47,16 @@
   .blob {
     // LAYOUT
     position: absolute;
-    height: var(--gradient-blob-size-large);
+    height: 150%;
     width: var(--gradient-blob-size-large);
     // STYLE
-    border-radius: 50%;
+    border-radius: 40%;
     filter: blur(5rem);
     will-change: filter;
 
-    &.up {
-      animation: blobDown 65s infinite linear;
-      left: 0;
+    &.left {
+      animation: blobDown 35s infinite linear;
+      left: -3rem;
       background-image: linear-gradient(
         80deg,
         var(--gradient-color-one),
@@ -64,9 +64,9 @@
       );
     }
 
-    &.down {
-      animation: blobUp 30s infinite linear;
-      right: 0;
+    &.right {
+      animation: blobUp 25s infinite ease;
+      right: -2rem;
       background-image: linear-gradient(
         80deg,
         var(--gradient-color-four),
@@ -80,10 +80,10 @@
 @keyframes blobDown {
   0%,
   100% {
-    top: -6.25rem;
+    top: -10rem;
   }
   70% {
-    top: 2rem;
+    top: 6rem;
   }
 }
 
@@ -93,7 +93,7 @@
     bottom: 10rem;
   }
   70% {
-    bottom: -6.25rem;
+    bottom: -10rem;
   }
 }
 

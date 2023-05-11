@@ -21,8 +21,8 @@ function App() {
         <div className={styles.avatarAnimation}>
           <img className={styles.avatar} src={MemojiWave} />
           <div className={styles.gradient}>
-            <div className={concat(styles.blob, styles.up)} />
-            <div className={concat(styles.blob, styles.down)} />
+            <div className={concat(styles.blob, styles.left)} />
+            <div className={concat(styles.blob, styles.right)} />
           </div>
         </div>
         <section className={styles.intro}>
