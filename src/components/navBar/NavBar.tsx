@@ -3,6 +3,7 @@ import { Button } from "../button/Button";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
 import { Tooltip } from "../tooltip/Tooltip";
+import { LinkButton } from "../linkButton/LinkButton";
 
 interface INavBarProps extends React.PropsWithChildren {
   onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
@@ -17,21 +18,32 @@ export const NavBar: React.FC<INavBarProps> = () => {
   return (
     <nav className={styles.navBar}>
       <Tooltip content={"Home"}>
-        <Button
+        <LinkButton
+          to="/"
+          kind="nav"
           ariaLabel="Open homepage"
           theme="transparent"
-          className={styles.logo}
         >
           ⚡️ Playground
-        </Button>
+        </LinkButton>
       </Tooltip>
       <div className={styles.links}>
-        <Button ariaLabel="Open About page" theme="transparent">
+        <LinkButton
+          to="about"
+          kind="nav"
+          ariaLabel="Open About page"
+          theme="transparent"
+        >
           About
-        </Button>
-        <Button ariaLabel="Open Contact" theme="transparent">
+        </LinkButton>
+        <LinkButton
+          to="contact"
+          kind="nav"
+          ariaLabel="Open Contact page"
+          theme="transparent"
+        >
           Contact
-        </Button>
+        </LinkButton>
         <Tooltip content={"Toggle theme"}>
           <Button
             ariaLabel="Toggle theme"

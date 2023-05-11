@@ -2,6 +2,7 @@ import type { Preview } from "@storybook/react";
 import "../src/theme.css";
 import React from "react";
 import { TooltipProvider } from "@radix-ui/react-tooltip";
+import { BrowserRouter } from "react-router-dom";
 
 const preview: Preview = {
   parameters: {
@@ -22,9 +23,11 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <TooltipProvider>
-        <Story />
-      </TooltipProvider>
+      <BrowserRouter>
+        <TooltipProvider>
+          <Story />
+        </TooltipProvider>
+      </BrowserRouter>
     ),
   ],
 };

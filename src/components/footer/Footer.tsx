@@ -8,6 +8,7 @@ import {
   LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
 import { scrollToTop } from "../../helpers/scrollToTop";
+import { LinkButton } from "../linkButton/LinkButton";
 
 interface INavBarProps extends React.PropsWithChildren {
   onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
@@ -28,23 +29,35 @@ export const Footer: React.FC<INavBarProps> = () => {
       <ul className={styles.links}>
         <li>
           <Tooltip content={"Instagram"}>
-            <Button ariaLabel="Open Instagram" theme="transparent">
+            <LinkButton
+              to="https://www.instagram.com/tomhinsley/"
+              ariaLabel="Open Instagram"
+              theme="transparent"
+            >
               <InstagramLogoIcon />
-            </Button>
+            </LinkButton>
           </Tooltip>
         </li>
         <li>
           <Tooltip content={"Github"}>
-            <Button ariaLabel="Open Github" theme="transparent">
+            <LinkButton
+              to="https://github.com/tmhnsly"
+              ariaLabel="Open Github"
+              theme="transparent"
+            >
               <GitHubLogoIcon />
-            </Button>
+            </LinkButton>
           </Tooltip>
         </li>
         <li>
           <Tooltip content={"LinkedIn"}>
-            <Button ariaLabel="Open LinkedIn" theme="transparent">
+            <LinkButton
+              to="https://uk.linkedin.com/in/tmhnsly"
+              ariaLabel="Open LinkedIn"
+              theme="transparent"
+            >
               <LinkedInLogoIcon />
-            </Button>
+            </LinkButton>
           </Tooltip>
         </li>
       </ul>
