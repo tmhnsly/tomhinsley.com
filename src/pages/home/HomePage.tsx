@@ -145,10 +145,8 @@ function HomePage() {
               full, so time to start routing.
             </p>
             <p>
-              This is also a test to see roughly how to lay out the sections.
-              Could just look up some tutorials. Having the flexibilty to make
-              things wide screen is good, but making everything a column can be
-              a pain.
+              Still figuring out content for this page. Please check back later
+              or get in touch!
             </p>
           </div>
         </div>
