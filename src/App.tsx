@@ -7,11 +7,9 @@ import ContactPage from "./pages/contact/ContactPage";
 import AboutPage from "./pages/about/AboutPage";
 import NotFoundPage from "./pages/notFound/NotFoundPage";
 
-import styles from "./app.module.scss";
-
 function App() {
   return (
-    <div className={styles.app}>
+    <>
       <NavBar />
       <Routes>
         <Route path="*" element={<NotFoundPage />} />
@@ -20,7 +18,7 @@ function App() {
         <Route path="contact" element={<ContactPage />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 

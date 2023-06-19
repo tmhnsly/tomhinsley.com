@@ -22,78 +22,57 @@
     right: 0;
     margin: auto;
   }
-}
 
-.gradient {
-  // VARIABLES
-  --gradient-blob-size-large: 50vw;
+  .gradient {
+    // VARIABLES
+    --gradient-blob-size-large: 50vw;
 
-  --gradient-color-one: var(--blue8);
-  --gradient-color-two: var(--red9);
-  --gradient-color-three: var(--teal8);
-  --gradient-color-four: var(--amber9);
+    --gradient-color-one: var(--blue8);
+    --gradient-color-two: var(--red9);
+    --gradient-color-three: var(--teal8);
+    --gradient-color-four: var(--amber9);
 
-  position: relative;
-  height: 15rem;
-  width: 100%;
-  overflow: hidden;
-  z-index: -1000;
-  background-image: linear-gradient(
-    80deg,
-    var(--gradient-color-one),
-    var(--gradient-color-two)
-  );
+    position: relative;
+    height: 15rem;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1000;
+    background-image: linear-gradient(
+      80deg,
+      var(--gradient-color-one),
+      var(--gradient-color-two)
+    );
 
-  .blob {
-    // LAYOUT
-    position: absolute;
-    height: 150%;
-    width: var(--gradient-blob-size-large);
-    // STYLE
-    border-radius: 40%;
-    filter: blur(5rem);
-    will-change: filter;
+    .blob {
+      // LAYOUT
+      position: absolute;
+      height: 150%;
+      width: var(--gradient-blob-size-large);
+      // STYLE
+      border-radius: 40%;
+      filter: blur(5rem);
+      will-change: filter;
 
-    &.left {
-      animation: blobDown 35s infinite linear;
-      left: -3rem;
-      background-image: linear-gradient(
-        80deg,
-        var(--gradient-color-one),
-        var(--gradient-color-three)
-      );
+      &.left {
+        animation: blobDown 35s infinite linear;
+        left: -3rem;
+        background-image: linear-gradient(
+          80deg,
+          var(--gradient-color-one),
+          var(--gradient-color-three)
+        );
+      }
+
+      &.right {
+        animation: blobUp 25s infinite ease;
+        right: -2rem;
+        background-image: linear-gradient(
+          80deg,
+          var(--gradient-color-four),
+          var(--gradient-color-two)
+        );
+      }
     }
-
-    &.right {
-      animation: blobUp 25s infinite ease;
-      right: -2rem;
-      background-image: linear-gradient(
-        80deg,
-        var(--gradient-color-four),
-        var(--gradient-color-two)
-      );
-    }
-  }
-}
-
-// BLOB ANIMATION
-@keyframes blobDown {
-  0%,
-  100% {
-    top: -10rem;
-  }
-  70% {
-    top: 6rem;
-  }
-}
-
-@keyframes blobUp {
-  0%,
-  100% {
-    bottom: 10rem;
-  }
-  70% {
-    bottom: -10rem;
   }
 }
 
@@ -136,5 +115,26 @@
     gap: var(--spacing-small);
     justify-content: center;
     margin: var(--spacing-xlarge) 0;
+  }
+}
+
+// BLOB ANIMATION
+@keyframes blobDown {
+  0%,
+  100% {
+    top: -10rem;
+  }
+  70% {
+    top: 6rem;
+  }
+}
+
+@keyframes blobUp {
+  0%,
+  100% {
+    bottom: 10rem;
+  }
+  70% {
+    bottom: -10rem;
   }
 }

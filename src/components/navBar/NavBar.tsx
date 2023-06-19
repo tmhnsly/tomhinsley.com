@@ -24,7 +24,7 @@ export const NavBar: React.FC<INavBarProps> = () => {
           ariaLabel="Open homepage"
           theme="transparent"
         >
-          ⚡️ Playground
+          ⚡️ tmhnsly
         </LinkButton>
       </Tooltip>
       <div className={styles.links}>

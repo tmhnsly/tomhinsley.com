@@ -1,0 +1,19 @@
+.intro {
+    max-width: 750px;
+    padding: 0 var(--spacing-xxlarge);
+  
+    .textSection {
+      margin-top: var(--spacing-xxlarge);
+      margin-bottom: var(--spacing-xxxlarge);
+    }
+  
+    .title {
+      margin-bottom: var(--spacing-small);
+    }
+  
+    .paragraph {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-medium);
+    }
+  }
